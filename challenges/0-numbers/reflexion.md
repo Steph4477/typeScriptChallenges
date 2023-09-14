@@ -1,6 +1,7 @@
 # Reflexion
 
 ## What is the sum of the binary numbers 01011010 and 00111011? (Do not use a calculator.)
+10010101
 
 ## What is the product of the binary numbers 000101010 and 00000011? (Do not use a calculator.)
 
