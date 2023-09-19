@@ -6,9 +6,6 @@ import { Weapon } from "./Weapon";
 import { Position } from "./Position";
 import { cardinalDirections } from "./cardinalDirections";
 import { Treasure } from "./Treasure";
-
-
-
 export class Game {
   player: Player;
   map: Room[][] = [];
@@ -16,7 +13,6 @@ export class Game {
   private readonly enemyRatio = 0.5;
   private readonly weaponRatio = 0.1;
   private readonly treasureRoom: Room;
-
   private get currentRoom(): Room {
     return this.map[this.player.currentPosition.y][
       this.player.currentPosition.x
@@ -28,14 +24,12 @@ export class Game {
       x: Math.floor((this.mapSize - 1) / 2),
       y: this.mapSize - 1,
     });
-
     this.treasureRoom = new Room();
     const treasure = new Treasure();
     this.treasureRoom.addItem(treasure);
     this.treasureRoom.addEnemy(
       new Enemy("Dragon", "A fierce dragon.", 150, 70)
     );
-
     this.generateGameMap();
   }
 
