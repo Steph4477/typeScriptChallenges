@@ -4,7 +4,7 @@
 
 Your task is to write a TypeScript function named `values` that accepts an object with string keys and values of generic type `T`. This function should return an array containing all the values of the object.
 
-For example, given an object `{a: "apple", b: "banana"}`, your function should return `["apple", "banana"]`.
+For example, given an object `{a: ,"apple" b: "banana"}`, your function should return `["apple", "banana"]`.
 
 ## Function signature
 

@@ -7,6 +7,8 @@ import { Position } from "./Position";
 import { cardinalDirections } from "./cardinalDirections";
 import { Treasure } from "./Treasure";
 
+
+
 export class Game {
   player: Player;
   map: Room[][] = [];
